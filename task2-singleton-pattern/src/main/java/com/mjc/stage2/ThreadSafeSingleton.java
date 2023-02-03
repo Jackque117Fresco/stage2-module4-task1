@@ -5,7 +5,7 @@ public class ThreadSafeSingleton {
     private static final ThreadSafeSingleton instance = new ThreadSafeSingleton();
     private ThreadSafeSingleton() {}
 
-    public ThreadSafeSingleton getInstance() {
+    public static ThreadSafeSingleton getInstance() {
         return instance;
     }
 }
